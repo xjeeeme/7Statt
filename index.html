@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>7Stat — Трекер веса и калорий</title>
+<style>
+  /* Сброс */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body.dark {
+    background: #1c1c1e;
+    color: #e5e5e7;
+  }
+
+  /* Контейнер */
+  #app {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 16px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Хедер */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 14px;
+    padding: 6px 14px;
+    background: #eaeaea;
+    user-select: none;
+    transition: background 0.3s;
+  }
+  body.dark header h1 {
+    background: #2c2c2e;
+  }
+
+  /* Темы */
+  #theme-toggle {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    color: inherit;
+    user-select: none;
+    padding: 4px 8px;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+  }
+  #theme-toggle:hover {
+    background-color: rgba(0,0,0,0.1
